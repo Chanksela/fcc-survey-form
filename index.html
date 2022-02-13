@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Survey Form</title>
+</head>
+<header>
+    <h1 id="title">Climbing Survey Form</h1>
+    </header>
+<body>
+    <p id="description"><strong>Thank you for helping us</strong></p>
+
+    <form id="survey-form">
+      <label for="name" id="name-label" class="headings">Name</label>
+  <input id="name" type="text" name="name" placeholder="Enter your name" required class="input-form">
+    <br>
+    
+    <label for="mail" id="email-label" class="headings">Email</label>
+  
+  <input id="email" type="email" name="email" placeholder="Enter your Email" required class="input-form">
+  <br>
+  
+  <label for="number" id="number-label" class="headings">Age</label>
+  
+  <input id="number" type="number" name="age" placeholder="Age" min="16" max="40" required class="input-form">
+<br>
+<label for="dropdown" id="discipline" class="headings" >Which climbing discipline do you practice the most?</label>
+<select id="dropdown" name="discipline" class="input-form">
+  <option value="" disabled selected></option>
+  <option value="Sport_Climbing">Sport Climbing</option>
+  <option value="Bouldering">Bouldering</option>
+  <option value="Speed_Climbing">Speed Climbing</option>
+</select>
+<br>
+
+<label for="exp" id="exp" class="headings">What is your level?</label>
+      <br>
+      <input id="exp" type="radio" name="level" value="beginner">
+      <label for="exp">Beginner</label>
+      <br>
+      <input id="exp" type="radio" name="level" value="intermediate">
+      <label for="exp">Intermediate</label>
+      <br>
+      <input id="exp" type="radio" name="level" value="pro">
+      <label for="exp">Pro</label>
+      <br>
+  <br>    
+      <label for="improve" id="exp" class="headings">Which discipline do you want to improve? (Choose at least one)</label>
+      <br>
+      <input id="improve" type="checkbox" name="level" value="sport">
+      <label for="improve">Sport Climbing</label>
+      <br>
+      <input id="improve" type="checkbox" name="level" value="boulder">
+      <label for="improve">Bouldering</label>
+      <br>
+      <input id="improve" type="checkbox" name="level" value="speed">
+      <label for="improve">Speed Climbing</label>
+      <br>
+      <br>
+      <label id="textarea" class="headings">Add aditional comments</label>
+      <br>
+      <textarea id="textarea" name="comment" placeholder="Add your comment here" rows="8" cols="40" class="text-box"></textarea>
+      <br>
+      <input id="submit" type="submit" class="submit-button"></input>
+  </form>    
+</body>
+</html>
